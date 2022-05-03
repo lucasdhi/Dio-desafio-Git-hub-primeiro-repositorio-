@@ -1,0 +1,139 @@
+# Git e git hub
+
+- o git não tem uma interface gráfica , o git e um CLI.
+- COMANDOS windos e linux
+    - o comando DIR e para listar pastas e entender em qual pasta esta (WINDONS) isso no windons
+    - cd windons , e para navegar em umas pasta windons , depois usar o comando DIR para ver todas pastas windons ( windons )
+    - para voltar pasta no windos e cd .. ( windons )
+    - comando para limpar a tela windosn cls (windos)
+    - TABLE completa o comando no windons (windons)
+    - para criar umas pasta no windons o comando é mkdir , assim que colocamos o mkdir temos que dar o nome de umas pasta por padrão o nome workspace, ficando dessa forma, o comando mkdir depois o nome da pasta e enter , depois o comando DIR para listar a pasta criada (windons)
+    - para navergar na pasta criada, cd e o nome da pasta cd workspace (windons)
+    - criando arquivo no terminal, o comando é echo hello enter, ele vai devolver o nome da pasta e colocamos echo hello  > hello.txt , depois enter , e DIR (windons )
+    - para deletar o arquivo de umas pasta del e o nome da pasta, del workspace (windons)
+    - se usar a certinha para cima mostra todos os comandos que usamos ( windons)
+    - para remover completamente uma pasta e arquivos, rmdir e o nome da pasta rmdhir workspace /S /Q enter, depois o dir (windons)
+    - criando arquivo no terminal, o comando é echo hello enter, ele vai devolver o nome da pasta e colocamos echo hello  > hello.txt , depois enter , e LS (linux )
+    - sair de uma pasta ou voltar cd .. (linux)
+    - LS e para listar pastas e entender em qual pasta esta (Linux) isso no linux
+    - cs  /  para especificar umas pasta que vai, navegar entre as pastas, escolher um lugar especifico ( windons e linux )
+    - cd etc, depois o comando ls, vai trazer tudo nas pastar linux (linux)
+    - para voltar alguma pasta no linux e cdd .. (linux)
+    - para excluir a pasta no linux, listar ls, depois cd.. ls de novo e o comando  rm -rf workdpace/, depois ls para listar e a pasta não vai estar mais la (linux)
+    - comando para limpar a tela do linux clear (linux)
+    - atalho CTRL + L no linux limpa a tela (linux)
+- comando para criar pasta no linux mkdir depois o nome da pasta, enter e ls pra lista a pagina (linux)
+- atalho CTRL + L no linux limpa a tela (linux)
+- TOPICOS  PARA ENTENDER O FUNCIONAMENTO DO GIT
+    
+    ![Capturar.PNG](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/798c0a8b-2a56-4c05-914f-db42b6161db0/Capturar.png)
+    
+    a saida desse dados gera um conjunto de caracteres de 40 digitos ele e unico e serve como identificação,
+    
+    - um exemplo  melhor esta aqui, aqui temos nosso arquivo texte.tt, com um texto, vamos abrir o git nessa pasta de texto e colocar o comando  openssl shal e o nome do arquivo texto.txt, em seguida podemos ver ele gera um conjunto de 40 caracteres, se a gente muldar qualquer letra ou um virgula, e colocamos o comando novamente ele gera um conjunto diferente de 40 caracteres
+    
+    ![2.PNG](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/020abf32-b89e-4db1-af8d-678665e5a294/2.png)
+    
+- OBJETOS DO GIT - BLOBS TREES COMMITS
+    - 3 tipo de objetos do git BLOBS TREES COMMITS
+    - git e um sistema distribuido e seguro
+    - as TREES amarzena as blobs
+    - commit aponta para uma arvore, aponta para um parente
+    
+    ![Capturar.PNG](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0faf7403-7579-4c64-b4d7-79d4077051bc/Capturar.png)
+    
+    - Chaves SSH E TOKEN
+        - Chave SSH É UMA FORMA de criar uma conexão segura e incriptada entre 2 maquinas, no caso se conectar com o sevidor do git hub e configurar nossa maquina local, como uma maquina confiável para o git hub estabelencendo essa conexão com 2 chaves, sempre uma chave publica e uma privada, vamos pegar a chave publica e colocar no git
+        - é aqui que a chave SSh fica
+        
+        ![1.PNG](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/bda49bc3-3aab-46cb-8e4b-9e5484bd24d0/1.png)
+        
+        - Comandos pra criar a chave
+            - comando pra gerar a chave é ssh-keygen -t ed255519 -c lucas28soares@hotmail.com.br
+            
+            ![2.PNG](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/60a644e7-6991-444d-a3de-dfbbf0d54347/2.png)
+            
+            depois colocar uma senha e dar enter vai gerar a chave
+            
+            ![3.PNG](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/096ac9d3-3665-4554-9ef9-f70c8ebb683d/3.png)
+            
+            depois colocar os seguintes comando para gerar a chave
+            
+            ![5.PNG](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9985db1d-a1ea-4412-9225-7f9abf31fd98/5.png)
+            
+            vamos copiar essa chave e colar aqui 
+            
+            ![6.PNG](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a3c44046-12e1-449c-a58e-5662f3196dca/6.png)
+            
+            - Iniciando o git
+                
+                ![7.PNG](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/90cb1995-f69d-46ab-9b66-8c5960fabee1/7.png)
+                
+            - git init e para inicializar o git, ele cria um repositorio no git
+            - Aqui demos os primeiro comando, colocamos ls para listar a pagina e venho a pasta com o nome git no final e nessa pasta que vai acontecer todo codigo git
+            
+            ![8.PNG](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/eaef1946-dce3-41db-82e5-68deaa525cdf/8.png)
+            
+            - o comando menos -a mostra arquivos ocultos no git
+            
+            ![9.PNG](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5a8ad707-a733-4b30-be44-acbab6021c12/9.png)
+            
+            - Ciclo de vida dos arquivos git
+                - traked ou untraked
+                
+                ![10.PNG](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c302bf66-2ea5-4c43-bb45-a297c67a3c65/10.png)
+                
+                - Untracked são arquivos que o git não tem ciencia dentro dele
+                - criamos um arquivo no git ele é untracked, pq acabamos de criar o arquivo
+                - o comando git asd, moveu o arquivo o arquivo untracked direto para stage, para a area que ele esta esperando alguma coisa
+                - Trackd são os arquivos que o git tem ciencia dentro dele
+                - unmodified é o arquivo que ainda não foi modificado , se voce modifica o unmodified , ele muda altomaticamente para mondifield, o git compara o sha1 dos arquivos
+                - se rodamos o git ed nesse arquivo modifield ele vai pra stage
+                - se temos um arquivo umondifiel e ele não sofreu alteração e a gente exclui ele volta a ser untracked
+                - o commit manda os arquivos para o unmondifil para gerar todo ciclo novamente
+                - modifield o arquivo que sofreu modificação
+                - stage é o arquivo que esta se preparando para fazer parte de outro arquivo
+                - staged, commit, quando vc mandao comiit ele volta a ser untracked
+                
+                ![11.PNG](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/78cacaa1-035e-48f6-901a-f40058c65ecb/11.png)
+                
+                - os arquivos ficam transitando entre a working directory e a staging área
+                - quando faz o commit move os arquivos para a area STAGINS
+                - o LOCAL REPOSITORY, so vai ter coisas comitadas, todos os commit vão estar no repository
+                
+                ![15.PNG](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/07d5b297-2128-461d-b682-9354379cad52/15.png)
+                
+                - comando git status - monitora o status do arquivo , vai dizer se aquele arquivo é untracked ou unmodifiel
+                - comando MV move pastas , coloca  mv e o nome da pasta e coloca ./ pra dizer que esta nesse repositorio e buscar outro
+                
+                ![20.PNG](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4d4d7e0d-8c47-4d4e-9397-3377856bef86/20.png)
+                
+                - para comitar, commit -m e escreve  algo em “ “
+                - pra mim saber as configuraçoes no meu git, uso o comando  git config —list
+                - aqui demos o comando e apareceu todas as configuraçoes
+                
+                ![30.PNG](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3dce0762-5784-409c-915d-74ce79b7158e/30.png)
+                
+                para reconfigurar essa configuração precisamos colocar o comando git config - -global  - - unset ( e colocar o nome da configração
+                
+                ![33.PNG](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/33cbb7c3-fa2c-4098-9318-dc769d94e206/33.png)
+                
+                git push ele empurra o nosso codigo local para o resositorio remoto do git
+                
+                - COMO RESOLVER OS CONFLITOS DO GIT
+                    
+                    Aqui mandamos um commit e deu esse erro, esse erro é pq o git contem alguma alteração que não tem na nossa maquina, alguem mandou commit com a data diferente do meu e conteudo diferente
+                    
+                    ![60.PNG](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1f87e4b1-0359-40d2-a399-6959d4bc5086/60.png)
+                    
+                    - IMPORTANTE para resolver esse erro , precisamos integrar os 2 repositorios e depois mandar para o git, com o comando , git pull
+                    - git pull de puxar as alteração do git para nossa maquina, assim o git junta essas 2 versoes
+                    
+                    ![61.PNG](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6c762052-d7d5-4bdc-be75-07319a11c162/61.png)
+                    
+                    - aqui pegamos o codigo e colocamos em outro lugar no taipe mostra ele diferente pq ele é um editor voltado para editar  markidaw
+                    
+                    ![77.PNG](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8155ac64-50cf-40cf-9cc9-b1bcddde7ad2/77.png)
+                    
+                    - importante comando ls -a e pra mostrar arquivos ocultos
+                    - git remote -v . tras todos repositorios remotos
